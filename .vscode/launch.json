@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "HTML5 - Chrome",
+            "windows": {
+                "runtimeExecutable": "C:\\Users\\JSNof\\scoop\\apps\\googlechrome\\current\\chrome.exe"
+            },
+            "linux": {
+                "runtimeExecutable": "/usr/bin/chromium"
+            },
+            "runtimeArgs": [
+                "--disable-web-security",
+                "--allow-insecure-localhost"
+            ],
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}/build/html5",
+            "preLaunchTask": "Kha: Build for HTML5"
+        },
+        {
+            "type": "electron",
+            "request": "launch",
+            "name": "Kha: HTML5",
+            "appDir": "${workspaceFolder}/build/debug-html5",
+            "cwd": "${workspaceFolder}/build/debug-html5",
+            "sourceMaps": true,
+            "preLaunchTask": "Kha: Build for Debug HTML5",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "krom",
+            "request": "launch",
+            "name": "Kha: Krom",
+            "preLaunchTask": "Kha: Build for Krom",
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ],
+    "compounds": []
+}
