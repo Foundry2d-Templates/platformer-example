@@ -1,0 +1,6 @@
+[submodule "Libraries/foundsdk"]
+	path = Libraries/foundsdk
+	url = https://github.com/foundry2D/foundsdk.git
+[submodule "Kha"]
+	path = Kha
+	url = https://github.com/Kode/Kha.git
